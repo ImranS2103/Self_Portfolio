@@ -25,7 +25,7 @@ function Home() {
                                         <div className="navbar-header">
                                             <div className="mobile-logo my-15">
                                                 <a href="About.jsx">
-                                                    <img src="assets/images/logos/logo.png" alt="Logo" title="Logo" />
+                                                    <img src="assets/images/logos/log.png" alt="Logo" title="Logo" />
                                                 </a>
                                             </div>
 
