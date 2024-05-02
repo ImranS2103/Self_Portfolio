@@ -20,7 +20,7 @@ function Services() {
                             <div className="number">01.</div>
                             <div className="content">
                                 <h4>Website Development</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <p>Proficiency</p>
                             </div>
                             <a href="service-details.html" className="details-btn"><i className="fas fa-arrow-right"></i></a>
                         </div>
@@ -30,7 +30,7 @@ function Services() {
                             <div className="number">02.</div>
                             <div className="content">
                                 <h4>Responsive Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <p>Proficiency</p>
                             </div>
                             <a href="service-details.html" className="details-btn"><i className="fas fa-arrow-right"></i></a>
                         </div>
@@ -40,7 +40,7 @@ function Services() {
                             <div className="number">03.</div>
                             <div className="content">
                                 <h4>Website Design</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <p>Proficiency</p>
                             </div>
                             <a href="service-details.html" className="details-btn"><i className="fas fa-arrow-right"></i></a>
                         </div>
@@ -50,7 +50,7 @@ function Services() {
                             <div className="number">04.</div>
                             <div className="content">
                                 <h4>CMS Development</h4>
-                                <p>Dignissimos ducimus blanditiis praesen</p>
+                                <p>Beginner</p>
                             </div>
                             <a href="service-details.html" className="details-btn"><i className="fas fa-arrow-right"></i></a>
                         </div>

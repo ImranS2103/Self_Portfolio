@@ -13,7 +13,7 @@ function Skills() {
                                 <div className="section-title mb-40">
                                     <span className="sub-title mb-15">My Skills</span>
                                     <h2>Let’s Explore Popular <span>Skills & Experience</span></h2>
-                                    <p>Sed ut perspiciatis unde omnis iste natus to voluptatem accusantium doloremque laudantium, totam rem aperiamc eaque ipsa quae ab illo inventore veritatis</p>
+                                    <p>Languages,Technologies and tools that I have learned and applied to my projects</p>
                                 </div>
                                 <a href="about.html" className="theme-btn">Learn More <i className="far fa-angle-right"></i></a>
                             </div>
