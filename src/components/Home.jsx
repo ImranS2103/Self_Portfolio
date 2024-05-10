@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Home() {
+    useEffect(() => {
+        const toggleScrollTop = () => {
+            if (window.pageYOffset > 200) { // Show button after scrolling 200px
+                document.querySelector('.scroll-top').classList.add('show');
+            } else {
+                document.querySelector('.scroll-top').classList.remove('show');
+            }
+        };
+
+        window.addEventListener('scroll', toggleScrollTop);
+
+        return () => window.removeEventListener('scroll', toggleScrollTop);
+    }, []);
     return (
-        <body className="home-one">
+        <div className="home-one">
             <div className="page-wrapper">
 
                 {/* Preloader */}
@@ -16,7 +30,7 @@ function Home() {
 
                             <div className="header-inner rel d-flex align-items-center">
                                 <div className="logo-outer">
-                                    <div className="logo"><a href="index.html"><img src="assets/images/logos/log.png" alt="Logo" title="Logo" /></a></div>
+                                    <div className="logo"><AnchorLink href="#home"><img src="assets/images/logos/log.png" alt="Logo" title="Logo" /></AnchorLink></div>
                                 </div>
 
                                 <div className="nav-outer clearfix mx-auto">
@@ -39,78 +53,24 @@ function Home() {
 
                                         <div className="navbar-collapse collapse clearfix">
                                             <ul className="navigation onepage clearfix">
-                                                <li><a href="#home">Home</a></li>
-                                                <li><a href="#about">about</a></li>
-                                                <li><a href="#resume">Resume</a></li>
-                                                <li><a href="#services">services</a></li>
-                                                <li><a href="#skills">skills</a></li>
-                                                <li><a href="#portfolio">projects</a></li>
-                                                {/* <li><a href="#blog">blog</a></li> */}
-                                                <li><a href="#contact">Contact</a></li>
+                                                <li><AnchorLink href="#home">Home</AnchorLink></li>
+                                                <li><AnchorLink href="#about">About</AnchorLink></li>
+                                                <li><AnchorLink href="#resume">Resume</AnchorLink></li>
+                                                <li><AnchorLink href="#services">Services</AnchorLink></li>
+                                                <li><AnchorLink href="#skills">Skills</AnchorLink></li>
+                                                <li><AnchorLink href="#portfolio">Projects</AnchorLink></li>
+                                                <li><AnchorLink href="#contact">Contacts</AnchorLink></li>
                                             </ul>
                                         </div>
 
                                     </nav>
                                     {/* Main Menu End*/}
                                 </div>
-
-                                {/* Menu Button */}
-                                <div className="menu-btns">
-                                    {/* menu sidbar */}
-                                    <div className="menu-sidebar">
-                                        <button>
-                                            <img src="assets/images/shape/sidebar-tottler.svg" alt="Toggler" />
-                                        </button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                     {/*End Header Upper*/}
                 </header>
-
-
-                {/*Form Back Drop*/}
-                <div className="form-back-drop"></div>
-
-                {/* Hidden Sidebar */}
-                <section className="hidden-bar">
-                    <div className="inner-box text-center">
-                        <div className="cross-icon"><span className="fa fa-times"></span></div>
-                        <div className="title">
-                            <h4>Get Appointment</h4>
-                        </div>
-
-                        {/*Appointment Form*/}
-                        <div className="appointment-form">
-                            <form method="post" action="https://webtend.site/html/noxfolio_pre/contact.html">
-                                <div className="form-group">
-                                    <input type="text" name="text" value="" placeholder="Name" required />
-                                </div>
-                                <div className="form-group">
-                                    <input type="email" name="email" value="" placeholder="Email Address" required />
-                                </div>
-                                <div className="form-group">
-                                    <textarea placeholder="Message" rows="5"></textarea>
-                                </div>
-                                <div className="form-group">
-                                    <button type="submit" className="theme-btn">Submit now</button>
-                                </div>
-                            </form>
-                        </div>
-
-                        {/*Social Icons*/}
-                        <div className="social-style-one">
-                            <a href="https://www.linkedin.com/in/imran-shaikh-04016023b/"><i className="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/ImranS2103"><i className="fab fa-github"></i></a>
-                            <a href="https://join.skype.com/invite/vxcB22yjxs2F"><i className="fab fa-skype"></i></a>
-                            <a href="#"><i className="fab fa-pinterest-p"></i></a>
-                        </div>
-                    </div>
-                </section>
-                {/*End Hidden Sidebar */}
-
-
                 {/* Hero Section Start */}
                 <section id="home" className="main-hero-area pt-150 pb-80 rel z-1">
                     <div className="container container-1620">
@@ -121,8 +81,10 @@ function Home() {
                                     <h1><b>Imran Shaikh</b> Web Developer</h1>
                                     <p>Experienced in building robust web applications,Website UI's and Web Designes</p>
                                     <div className="hero-btns">
-                                        <a href="contact.html" className="theme-btn">Hire Me <i className="far fa-angle-right"></i></a>
-                                        <a href="/Imran_React.pdf" download className="read-more">Download Resume <i className="far fa-angle-right"></i></a>
+
+                                        <AnchorLink href="#contact" className="theme-btn">Hire Me <i className="far fa-angle-right"></i></AnchorLink>
+
+                                        <a href="/assets/Imran-React.pdf" download className="read-more">Download Resume <i className="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +107,7 @@ function Home() {
                             <div className="col-lg-5">
                                 <div className="author-image-part wow fadeIn delay-0-3s">
                                     <div className="bg-circle"></div>
-                                    <img src="assets/images/hero/imran.png" alt="Author" />
+                                    <img src="assets/images/hero/ios.png" alt="Author" />
                                     <div className="progress-shape">
                                         <img src="assets/images/hero/progress-shape.png" alt="Progress" />
                                     </div>
@@ -163,7 +125,14 @@ function Home() {
                 </section>
                 {/* Hero Section End */}
             </div>
-        </body>
+            <div className="social-style-one">
+                <a href="https://www.linkedin.com/in/imran-shaikh-04016023b/"><i className="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ImranS2103"><i className="fab fa-github"></i></a>
+                <a href="https://join.skype.com/invite/vxcB22yjxs2F"><i className="fab fa-skype"></i></a>
+                <a href="https://www.instagram.com/mr.imran_21?igsh=MWx1c2d3ZXJoOGJ6ZA=="><i className="fab fa-instagram"></i></a>
+            </div>
+            <button className="scroll-top scroll-to-target" data-target="html"><span className="fas fa-angle-double-up"></span></button>
+        </div>
     )
 }
 

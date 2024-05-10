@@ -50,6 +50,13 @@ function Skills() {
                                         </div>
                                     </div>
                                     <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
+                                        <div className="skill-item wow fadeInUp delay-0-4s">
+                                            <img src="assets/images/skills/redux.png" alt="Skill" />
+                                            <h5>Redux</h5>
+                                            <span className="percent">75%</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                         <div className="skill-item wow fadeInUp delay-0-2s">
                                             <img src="assets/images/skills/skill5.png" alt="Skill" />
                                             <h5>Angular</h5>
@@ -63,13 +70,7 @@ function Skills() {
                                             <span className="percent">80%</span>
                                         </div>
                                     </div>
-                                    <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
-                                        <div className="skill-item wow fadeInUp delay-0-4s">
-                                            <img src="assets/images/skills/git.png" alt="Skill" />
-                                            <h5>Git</h5>
-                                            <span className="percent">90%</span>
-                                        </div>
-                                    </div>
+                                  
                                     <div className="col-xl-3 col-lg-4 col-md-3 col-sm-4 col-6">
                                         <div className="skill-item wow fadeInUp delay-0-5s">
                                             <img src="assets/images/skills/sql.png" alt="Skill" />

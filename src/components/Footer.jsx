@@ -1,4 +1,5 @@
 import React from 'react'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Footer() {
   return (
@@ -19,16 +20,16 @@ function Footer() {
                             <div className="footer-widget widget_nav_menu wow fadeInUp delay-0-4s">
                                 <h6 className="footer-title">Quick Link</h6>
                                 <ul>
-                                    <li><a href="services.html">Service</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li><a href="services.html#pricing">Pricing</a></li>
-                                    <li><a href="about.html#faqs">Faqs</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><AnchorLink href='#home'>Home</AnchorLink></li>
+                                    <li><AnchorLink href='#services'>Services</AnchorLink></li>
+                                    <li><AnchorLink href='#portfolio'>Projects</AnchorLink></li>
+                                    <li><AnchorLink href='#resume'>Resume</AnchorLink></li>
+
                                 </ul>
                             </div>
                             <div className="footer-widget widget_newsletter wow fadeInUp delay-0-4s">
                                 <form action="#">
-                                    <label for="email-address"><i className="far fa-envelope"></i></label>
+                                    <label htmlFor="email-address"><i className="far fa-envelope"></i></label>
                                     <input id="email-address" type="email" placeholder="Email Address" required />
                                     <button>Sign Up <i className="far fa-angle-right"></i></button>
                                 </form>
@@ -60,7 +61,7 @@ function Footer() {
                                <li><a href="https://www.linkedin.com/in/imran-shaikh-04016023b/">LinkedIn</a></li>
                                <li><a href="https://github.com/ImranS2103">Github</a></li>
                                <li><a href="https://join.skype.com/invite/vxcB22yjxs2F">Skype</a></li>
-                               <li><a href="#">Instagram</a></li>
+                               <li><a href="https://www.instagram.com/mr.imran_21?igsh=MWx1c2d3ZXJoOGJ6ZA==">Instagram</a></li>
                            </ul>
                        </div>
                    </div>
