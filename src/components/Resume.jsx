@@ -31,7 +31,7 @@ function Resume() {
                                         <div className="content">
                                             <span className="years">2023 - Present</span>
                                             <h4>Front End Developer</h4>
-                                            <span className="company">Ricecity</span>
+                                            <span className="company">KodeKalp</span>
                                         </div>
                                     </div>
                                 </div>

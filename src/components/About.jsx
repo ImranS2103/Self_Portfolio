@@ -32,7 +32,7 @@ function About() {
                                     <div className="info-box-item">
                                         <div className="content">
                                             <span>Make A Call</span><br/>
-                                            <a href="callto:+000(123)45688">+91 8830541314</a>
+                                            <a href="callto:8830541314">+91 8830541314</a>
                                         </div>
                                     </div>
                                 </div>

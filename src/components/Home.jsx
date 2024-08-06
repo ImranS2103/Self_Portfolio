@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Chatbot from './Chatbot';
 
 function Home() {
     useEffect(() => {
@@ -43,6 +44,9 @@ function Home() {
                                                 </a>
                                             </div>
 
+                                            {/* ChatBot */}
+                                                {/* <Chatbot /> */}
+
                                             {/* Toggle Button */}
                                             <button type="button" className="navbar-toggle me-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                                                 <span className="icon-bar"></span>
@@ -84,18 +88,18 @@ function Home() {
 
                                         <AnchorLink href="#contact" className="theme-btn">Hire Me <i className="far fa-angle-right"></i></AnchorLink>
 
-                                        <a href="/assets/Imran-React.pdf" download className="read-more">Download Resume <i className="far fa-angle-right"></i></a>
+                                        <a href="/assets/Imran-React-.pdf" download className="read-more">Download Resume <i className="far fa-angle-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-5 order-lg-3">
                                 <div className="hero-counter-wrap ms-lg-auto rmb-55 wow fadeInUp delay-0-4s">
                                     <div className="counter-item counter-text-wrap">
-                                        <span className="count-text plus" data-speed="3000" data-stop="10">0</span>
-                                        <span className="counter-title">Months Of Experience</span>
+                                        <span className="count-text plus" data-speed="3000" data-stop="1">0</span>
+                                        <span className="counter-title">Year Of Experience</span>
                                     </div>
                                     <div className="counter-item counter-text-wrap">
-                                        <span className="count-text plus" data-speed="3000" data-stop="8">0</span>
+                                        <span className="count-text plus" data-speed="3000" data-stop="5">0</span>
                                         <span className="counter-title">Project Complete</span>
                                     </div>
                                     <div className="counter-item counter-text-wrap">
